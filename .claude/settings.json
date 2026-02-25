@@ -1,0 +1,43 @@
+{
+  "skipDangerousModePermissionPrompt": true,
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Bash(mkdir:*)",
+      "Bash(cd:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(echo:*)",
+      "Bash(pwd:*)",
+      "Bash(touch:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(trash:*)",
+      "Bash(uv:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git checkout:*)",
+      "Bash(make:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Edit(./.cursor/**)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(make push:*)"
+    ],
+    "ask": [
+      "Bash(curl:*)",
+      "Bash(git checkout --:*)"
+    ],
+    "defaultMode": "default"
+  }
+}
